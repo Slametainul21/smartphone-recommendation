@@ -59,7 +59,8 @@ class RecommendationController extends Controller
         ->get();
 
     if ($smartphones->isEmpty()) {
-        return back()->with('error', 'Tidak ada smartphone yang sesuai dengan kriteria Anda. Silakan coba kriteria lain.');
+        return back()->with('error', 'Tidak ada smartphone yang
+        sesuai dengan kriteria Anda. Silakan coba kriteria lain.');
     }
 
     // Implementasi Content-Based Filtering dengan Cosine Similarity

@@ -55,15 +55,17 @@
                             @error('price_range')
                                 <div style="color: var(--error); font-size: 14px; margin-top: 4px;">{{ $message }}</div>
                             @enderror
-                            <div style="color: var(--gray-600); font-size: 14px; margin-top: 4px;">
+                            <div style="color: var(--gray-500); font-size: 14px; margin-top: 4px;">
                                 Pilih budget yang sesuai dengan kemampuan finansial Anda
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="category_id" class="form-label">Kategori Penggunaan *</label>
-                            <div
-                                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                            <div style="color: var(--gray-500); font-size: 14px; margin-top: 4px;">
+                                Pilih salah satu kategori sesuai kebutuhan utama Anda
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
                                 @foreach ($categories as $category)
                                     <label
                                         style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid var(--gray-200); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;"
